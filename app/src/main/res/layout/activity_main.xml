@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:id="@+id/llTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="标题"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llFoot"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"/>
+
+        <Button
+            android:id="@+id/btnEnlarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放大"/>
+
+        <Button
+            android:id="@+id/btnReduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩小"/>
+
+        <Button
+            android:id="@+id/btnMoveAbove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一层"/>
+
+        <Button
+            android:id="@+id/btnMoveDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一层"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTitle"
+        android:id="@+id/llBody"
+        android:layout_above="@id/llFoot"
+        android:orientation="vertical">
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
